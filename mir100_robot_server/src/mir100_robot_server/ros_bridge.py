@@ -156,7 +156,7 @@ class RosBridge:
         msg.angular.z = ang_vel
         self.env_cmd_vel_pub.publish(msg)
         # Sleep time set manually to achieve approximately 10Hz rate
-        rospy.sleep(0.07)
+        # rospy.sleep(0.07)
         return lin_vel, ang_vel
 
     def odometry_callback(self, data):
